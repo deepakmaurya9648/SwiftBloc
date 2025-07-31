@@ -54,12 +54,12 @@ open class Bloc<Event: BlocEvent, State: BlocState>: ObservableObject {
     }
     
     /// Emits a single state
-     func emit(_ state: State) -> AnyPublisher<State, Never> {
+    open func emit(_ state: State) -> AnyPublisher<State, Never> {
         Just(state).eraseToAnyPublisher()
     }
     
     /// Emits multiple states in sequence
-     func emitSequence(_ states: [State]) -> AnyPublisher<State, Never> {
+    open func emitSequence(_ states: [State]) -> AnyPublisher<State, Never> {
         Publishers.Sequence(sequence: states)
             .eraseToAnyPublisher()
     }
