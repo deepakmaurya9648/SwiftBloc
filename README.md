@@ -491,7 +491,54 @@ BlocListener(
 }
 ```
 
-## 🛠️ Requirements
+## � Examples
+
+We provide several examples to help you get started with SwiftBloc:
+
+### [Counter Example](/Example/CounterExample) - Start Here! 🎯
+A simple counter application demonstrating basic Cubit usage:
+- Basic state management
+- Simple UI integration
+- Two implementations:
+  - Using custom CounterState
+  - Direct Int state manipulation
+- State change history tracking
+
+### [Todo List Example](/Example/TodoExample) - Real World Usage 📝
+A more complex example showing:
+- BlocBaseState usage
+- Loading states
+- Error handling
+- CRUD operations
+- Async operations
+
+Each example includes:
+- Complete source code
+- Detailed README
+- Best practices
+- Step-by-step explanations
+
+## 🗺️ Example Navigation
+
+```
+/Example
+├── CounterExample/           # Basic counter app
+│   ├── README.md            # Counter example guide
+│   ├── SimpleCounterCubit/  # Direct Int state version
+│   └── CounterCubit/        # Custom state version
+│
+└── TodoExample/             # Todo list app
+    ├── README.md            # Todo example guide
+    └── ... 
+```
+
+To run the examples:
+1. Clone the repository
+2. Open the desired example folder
+3. Build and run the project
+4. Check the example's README for detailed explanations
+
+## �🛠️ Requirements
 
 - iOS 14.0+ / macOS 11.0+ / tvOS 14.0+ / watchOS 7.0+
 - Swift 5.9+
@@ -499,7 +546,11 @@ BlocListener(
 
 ## 🤝 Contributing
 
-We welcome contributions! Please feel free to submit a Pull Request.
+We welcome contributions! Please feel free to:
+- Submit Pull Requests
+- Report issues
+- Suggest new examples
+- Improve documentation
 
 ## 📄 License
 
@@ -514,4 +565,4 @@ SwiftBloc is available under the MIT license. See the LICENSE file for more info
 
 **Happy coding with SwiftBloc! 🎉**
 
-For more examples and advanced usage, check out our [example projects](./Examples/) folder.
+Want to learn more? Check out our [example projects](/Example) to see SwiftBloc in action!
